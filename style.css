@@ -94,3 +94,7 @@ clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg)*
 footer {
     background-image: url(/assets/background-village.jpg);
 }
+
+#official {
+    font-family: 'germania one' !important;
+}
