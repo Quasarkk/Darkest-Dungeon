@@ -1,0 +1,5 @@
+TO DO LIST (trucs à fix) : 
+
+- régler l'effet de hover sur la torche du header afin que quand on soit sur la torche le hover fonctionne aussi 
+- régler les borders sur les a afin qu'ils soient plus fin (taille du texte) et de la bonne couleur (gris plus foncé que celui de a)
+- faire les animations ease-in-out des hover effects (torche du header, a navbar, icones réseaux sociaux, Store&buynow)

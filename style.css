@@ -1,0 +1,96 @@
+@import url(https://fonts.bunny.net/css?family=germania-one:400);
+@import url(https://fonts.bunny.net/css?family=balthazar:400);
+
+/*
+COLORS : 
+--theme-primary: #9b1600 (main red)
+--theme-secondary: #3e0909 (secondary red (bordeaux))
+--theme-titles: #ebdfd5;
+--theme-body: #938582;
+--theme-accents: #675654;
+--theme-backgrounds: #201817;
+
+main red : #9B1600
+grey <a>: #72716F
+fonts:
+h1:germania one
+a:font-family: Balthazar,serif;
+
+*/
+
+
+
+h1 {
+    font-family: 'germania one' !important;
+    z-index: 100;
+}
+
+#about-the-game {
+    font-family: 'germania one' !important;
+}
+
+.bg-vid {
+    z-index: 0;
+}
+
+/*
+.dd-logo {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 0, 0, 0.5));
+         filter: drop-shadow(12px 12px 7px rgba(255, 0, 0, 0.5));
+}
+*/
+
+
+/*
+a:hover {
+    color:red
+}
+*/
+
+/*TEXT DECO : BOOTSTRAP ME BAISE*/
+a, p {
+    /*font-family: Balthazar,serif;*/
+    color: #8D8782;
+    text-decoration: none !important; 
+}
+
+/* BAISE DE BOOTSTRAP*/
+p {
+    margin-bottom: 0px;
+}
+
+#merch-btn {
+    -webkit-clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#merch-btn) !important;
+    clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#merch-btn) !important;
+}
+
+button {
+    -webkit-clip-path: url(https://www.darkestdungeon.com/#merch-btn) !important;
+    clip-path: url(https://www.darkestdungeon.com/#merch-btn) !important;
+}
+
+#bg-img {
+    clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg) !important;
+}
+
+/* bon lien clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#merch-btn) */
+
+/* clip-path du bg img juste sous la vidéo 
+https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg 
+clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg)*/
+
+#key-feature1 {
+    font-family: 'germania one' !important;
+}
+
+#key-feature2 {
+    font-family: 'germania one' !important;
+}
+
+#key-feature3 {
+    font-family: 'germania one' !important;
+}
+
+footer {
+    background-image: url(/assets/background-village.jpg);
+}
