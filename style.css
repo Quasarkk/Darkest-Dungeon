@@ -95,10 +95,18 @@ footer {
     background-image: url(/assets/background-village.jpg);
 }
 
-#official {
+#official, #overview, #features {
     font-family: 'germania one' !important;
 }
 
 #may-2 {
     font-family: Balthazar,serif;
+}
+
+#DLC {
+    color:#9b1600;
+}
+
+#section5 {
+    font-family: Balthazar,serif ;
 }
