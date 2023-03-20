@@ -20,7 +20,7 @@ a:font-family: Balthazar,serif;
 
 
 
-h1 {
+h1, h2 {
     font-family: 'germania one' !important;
     z-index: 100;
 }
@@ -79,6 +79,10 @@ button {
 https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg 
 clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg)*/
 
+/* clip-path des séparateurs du footer 
+
+clip-path: url(#footer-separator);*/ 
+
 #key-feature1 {
     font-family: 'germania one' !important;
 }
@@ -109,4 +113,8 @@ footer {
 
 #section5 {
     font-family: Balthazar,serif ;
+}
+
+#merch-p {
+    font-family: Balthazar,serif !important;
 }
