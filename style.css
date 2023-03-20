@@ -119,12 +119,41 @@ footer {
     font-family: Balthazar,serif !important;
 }
 
-
-#red-hook-logo-footer{
-    -webkit-filter: drop-shadow(10px 10px 0 black)
-    drop-shadow(-10px -10px 0 black);
-
-    /*
-    filter: drop-shadow(10px 10px 0 black) 
-    drop-shadow(-10px -10px 0 black); */
+#rectangle {
+    width: 100px;
+    height: 200px;
+    background: red;
 }
+    
+:root {
+    --theme-primary: #9b1600;
+    --tw-transform:
+}
+
+
+
+
+#li-footer-1::before {
+    content: "";
+    position: relative;
+    transform: rotate(45deg);
+    background-color: var(--theme-primary);
+    width: 5px !important;
+    height: 5px !important;
+    display: inline-block !important;
+    margin-right: 5px;
+    bottom: 4px
+}
+
+
+#li-footer-2::before {
+    content: "";
+    position: relative;
+    transform: rotate(45deg);
+    background-color: var(--theme-primary);
+    width: 5px !important;
+    height: 5px !important;
+    display: inline-block !important;
+    margin-right: 4px;
+}
+
