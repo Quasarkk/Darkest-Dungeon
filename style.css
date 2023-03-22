@@ -121,7 +121,18 @@ footer {
     --tw-transform:
 }
 
+/* SECTION 6 */ 
 
+#section6-button {
+    height: 49px;
+    width: 169px;
+    font-family: 'germania one';
+    color: white;
+    font-size: 20px;
+    background: #9b1600 url(/assets/texture.jpg);
+    background-blend-mode: multiply;
+
+}
 
 /* SECTION 7 */ 
 #section7-bg{
@@ -131,7 +142,7 @@ footer {
 
 #section7 {
     filter: drop-shadow(0 -50px 100px #000);
-    box-shadow: 0 0 600px 50px #9b1600; 
+    /* box-shadow: 0 0 600px 50px #9b1600; */
 }
 
 
