@@ -121,17 +121,34 @@ footer {
     --tw-transform:
 }
 
-/* SECTION 6 */ 
-
-#section6-button {
-    height: 49px;
-    width: 169px;
+button {
     font-family: 'germania one';
     color: white;
     font-size: 20px;
     background: #9b1600 url(/assets/texture.jpg);
     background-blend-mode: multiply;
+    clip-path: url(#btn-bg) ;
+}
 
+/* SECTION 5 */ 
+#section5-buynow-btn {
+    width: 150px;
+    height: 49px;
+    clip-path: url(#btn-bg) !important;
+}
+
+/* SECTION 6 */ 
+#section6-button {
+    height: 49px;
+    width: 169px;
+    clip-path: url(#btn-bg) !important;
+}
+
+#section6-button:hover {
+    background: white;
+    color:#9b1600;
+    transition: ease-in-out .2s;
+    
 }
 
 /* SECTION 7 */ 
