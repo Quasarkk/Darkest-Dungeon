@@ -247,8 +247,8 @@
   </div>
 
   <!-- SECTION 7 -->
-  <div class="bg-[url(/assets/footer-community-bg.png)] bg-no-repeat bg-cover h-[546px] ">
-  <div class="grid grid-cols-3 ">
+  <div class=" h-[546px] z-20 relative" id="section7">
+  <div class="grid grid-cols-3">
     <!-- col 1 -->
     <div class="mx-14 mt-20">
       <h2 class="text-[5.625rem] leading-[.85] text-[#ebdfd5] justify-center flex -mt-2">JOIN THE COMMUNITY</h2>
@@ -262,7 +262,7 @@
       </ul>
     </div>
     <!-- col 2 -->
-    <div class="border-x-8">
+    <div class="" id="section7-col2">
       <img src="/assets/newsletter-graphic.png" class="mx-auto w-[250px] flex relative bottom-[50px]"> 
       <h2 class="text-[2.125rem] text-[#ebdfd5] justify-center flex mx-auto w-60 leading-none">Get the latest on Darkest Dungeon</h2>
       <p class="justify-center flex font-['Balthazar'] text-lg w-[70%] mx-auto text-center">If you want to stay up to the minute with all things Darkest Dungeon, sign up below!</p>
@@ -273,7 +273,7 @@
           <button class="bg-red-900">SIGN UP</button>
         </div>
         <!-- checkbox RGPD -->
-        <ul class="my-4">
+        <ul class="my-4" >
             <li> <input id="link-checkbox" type="checkbox" value="" class=" font-['Balthazar'] text-lg  w-4 h-4 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 my-1">
               <label for="link-checkbox" class="ml-2  text-lg text-[#ebdfd5] font-['Balthazar'] ">I agree to Darkest Dungeon's<a href="#" class="text-[#9b1600] text-lg">Privacy & Cookie Policy</a>.</label> 
             </li>
@@ -284,19 +284,23 @@
         </ul>
       </form>
     </div>      
-    
     <!-- col 3 -->
-    <div>
+    <div id="section7-col2" >
       <img src="/assets/creations-graphic.png" class="mx-auto w-[350px] flex relative bottom-[80px]">
       <h2 class="text-[2.125rem] text-[#ebdfd5] justify-center flex">FAN CREATIONS</h2>
       <p class="justify-center flex font-['Balthazar'] text-lg w-[60%] mx-auto text-center" >If you want to stay up to the minute with all things Darkest Dungeon, sign up below!</p>
       <button class="bg-red-900 flex mx-auto">VIEW GALLERY</button>
     </div> 
   </div>
+  <div class="relative right-[2px] w-[102%] -z-20" id="section7-bg">
+      <picture class="bottom-[530px] w-[120vw] relative -z-20 " > 
+        <img src="/assets/footer-community-bg.png" class="h-[546px] w-[110vw] relative" alt="">
+      </picture>
+  </div>
   </div>
 
   <!-- SECTION 8 - FOOTER -->
-  <div class="h-[205px] relative" >
+  <div class="h-[205px] relative z-50 bottom-[30px]">
     <div class="flex-row flex z-10 -mt-[23px] -ml-[10px] relative" id="footer-bg">
       <!-- col 1 -->
       <div class="flex">
@@ -306,7 +310,7 @@
         </div>
       </div>
       <!-- col 2 -->
-      <div class="font-['Balthazar'] flex pl-12 w-[30%] text-white opacity-60 my-auto" id="section7-col2">
+      <div class="font-['Balthazar'] flex pl-12 w-[30%] text-white opacity-60 my-auto" id="footer-col2">
         <ul>
           <li>© COPYRIGHT ©2021<a href="ngolo" class="text-[#9b1600]">RED HOOK STUDIOS &nbsp</a>ALL RIGHTS RESERVED.</li>
           <li>SITE USE SUBJECT TO OUR &nbsp<a href="ngolo" class="text-[#9b1600]">PRIVACY POLICY</a></li>
@@ -315,7 +319,7 @@
         </ul>
       </div>
       <!-- col 3 -->
-      <div class="flex w-[60%] pl-12 my-auto align-middle" id="section7-col3">
+      <div class="flex w-[60%] pl-12 my-auto align-middle" id="footer-col3">
         <ul class="text-white opacity-50" id="menu">
           <li class=""><a id="li-footer-1" href="yazebi">Support</a></li>
           <li class=""><a id="li-footer-2" href="garen">Contact</a></li>
