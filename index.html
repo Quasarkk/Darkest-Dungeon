@@ -10,14 +10,15 @@
 
 <body>
   <!-- HEADER -->
-  <nav class="flex justify-center inset-0 z-20  h-auto ">
+  <nav class="flex justify-center inset-0 z-20  h-auto z-999">
     <img src="/assets/navbar-background.svg" class=" opacity-90 fixed w-full h-auto">
     <div class="fixed flex w-4/5 z-3 justify-between">
-      <a href="/darkest-dungeon" class="w-20 flex mb-4 -mt-6">
-        <svg xmlns="http://www.w3.org/2000/svg" data-v-6a8f98c4="" viewBox="0 0 91 143"><path data-v-6a8f98c4="" fill="#000000" d="M0 17.309v89.143l8.654 3.028c-7.843 2.327-7.789 5.626-7.789 5.626L0 138.474l12.982 4.327 16.444-3.462 11.251-4.219 1.731 5.085 11.197-1.731h15.514l2.715-5.193 1.73 6.058 12.117.866V96.932L79.623 90.8c9.466-2.469 8.438-18.426 8.438-18.426-6.816-2.272.216-10.926.216-10.926l2.597-57.121L.865 0 0 17.309Z" class="hover:fill-[#9B1600]"/>
+      <a href="/darkest-dungeon" class="group w-20 flex mb-4 -mt-6">
+        <svg xmlns="http://www.w3.org/2000/svg" data-v-6a8f98c4="" viewBox="0 0 91 143"><path data-v-6a8f98c4="" fill="#000000" d="M0 17.309v89.143l8.654 3.028c-7.843 2.327-7.789 5.626-7.789 5.626L0 138.474l12.982 4.327 16.444-3.462 11.251-4.219 1.731 5.085 11.197-1.731h15.514l2.715-5.193 1.73 6.058 12.117.866V96.932L79.623 90.8c9.466-2.469 8.438-18.426 8.438-18.426-6.816-2.272.216-10.926.216-10.926l2.597-57.121L.865 0 0 17.309Z" class="group-hover:fill-[#9B1600]"/>
         </svg>
+        <img src="/assets/torch.webp" class="w-20 h-max px-4 mt-[25px] fixed">
       </a>
-      <img src="/assets/torch.webp" class="w-20 h-max px-4 my-2 fixed">
+
       <div class="flex w-4/5 justify-end items-center inline-block mb-14">
         <p class="mx-2">DARKEST DUNGEON</p>
         <a href="/darkest-dungeon/about" class="px-2 hover:text-[#9B1600]">About</a>
@@ -49,7 +50,7 @@
   <div class="justify-center place-content-center self-center flex">
     <video src="/assets/dd1-loop.mp4" class="-z-10 absolute" autoplay loop muted></video>
     <div class="flex flex-col justify-center content-center w-3/5 h-900px z-2 mx-auto my-14">
-      <img src="/assets/darkest-dungeon-logo.webp" class="w-3/5 mx-auto drop-shadow-[12px_12px_7px_rgba(255,0,0,0.5)]">
+      <img src="/assets/darkest-dungeon-logo.webp" class="w-3/5 mx-auto drop-shadow-[0_0_10px_rgb(155,22,0)] drop-shadow-[0_0_30px_rgb(155,22,0)]">
       <!-- LOGOS PLATEFORMES -->
       <ul class="inline-flex mx-auto my-8">
         <li><a href="epicagmes"> <svg width="45" height="68" viewBox="0 0 45.187 68.875">
@@ -78,10 +79,10 @@
           </svg>
       </ul>
       <!-- 3 BUTTONS -->
-      <ul class="inline-flex mx-auto justify-center content-center w-3/5">
-        <button> BUY NOW </button>
-        <button> DLC </button>
-        <button> Trailer </button>
+      <ul class="inline-flex mx-auto justify-center">
+        <button class="mx-6 font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> BUY NOW </button>
+        <button class="mx-6 font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> DLC </button>
+        <button class="mx-6 font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> Trailer </button>
       </ul>
       <!-- PRIZES -->
       <ul class="inline-flex mx-auto my-12 justify-envenly gap-2">
@@ -121,7 +122,7 @@
       <p class="text-[18px] z-2 text-[#675654]" id="about-the-game">ABOUT THE GAME</p>
       <h1 class="text-[5rem] mb-6 leading-[4rem] text-[#ebdfd5] z-2">DESCEND INTO THE DARKEST DUNGEON</h1>
       <p class="text-lg my-2 text-[#938582]">Darkest Dungeon is a challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring. Recruit, train, and lead a team of flawed heroes against unimaginable horrors, stress, disease, and the ever-encroaching dark. Can you keep your heroes together when all hope is lost?</p>
-      <button class="bg-red-800 ">EXPLORE MORE</button>
+      <button class="font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200">EXPLORE MORE</button>
     </div>
     <div class="w-[95%] mx-auto -translate-y-[45rem] flex justify-evenly z-3">
       <div class="z-5 relative ">
@@ -154,20 +155,20 @@
     <img src="/assets/dd1-media-graphic.webp" class="left-[70.7%] relative mt-28">
     <div class="relative w-[90%] mx-auto bottom-[410px]">
         <p class="text-lg leading-[3rem]" id="official">OFFICIAL</p>
-        <h1 class="text-[5rem] text-[#ebdfd5]">MEDIA</h1>
-        <button class="flex justify-end relative ml-auto bg-red-900">VIEW ALL MEDIA</button>
+        <h1 class="font-['germania_one'] text-[5rem] text-[#ebdfd5]">MEDIA</h1>
+        <button class="font-['germania_one'] flex justify-end relative ml-auto bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200">VIEW ALL MEDIA</button>
     </div>
     <div class="relative w-[90%] mx-auto bottom-[410px] mt-6 justify-between flex">
-      <img src="/assets/grid-1.jpeg" alt="" srcset="" class="w-[370px] h-[207px]">
-      <img src="/assets/grid-2.png" alt="" srcset="" class="w-[370px] h-[207px]" >
-      <img src="/assets/grid-3.jpeg" alt="" srcset="" class="w-[370px] h-[207px]">
-      <img src="/assets/grid-4.jpeg" alt="" srcset="" class="w-[370px] h-[207px]">
+      <a href="jul"><img src="/assets/grid-1.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-2.png" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500" ></a>
+      <a href="jul"><img src="/assets/grid-3.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-4.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
     </div>
     <div class="relative w-[90%] mx-auto bottom-[410px] mt-4 justify-between flex">
-      <img src="/assets/grid-5.jpeg" alt="" srcset="" class="w-[370px] h-[207px]">
-      <img src="/assets/grid-6.jpeg" alt="" srcset="" class="w-[370px] h-[207px]" >
-      <img src="/assets/grid-7.jpeg" alt="" srcset="" class="w-[370px] h-[207px]">
-      <img src="/assets/grid-8.png" alt="" srcset="" class="w-[370px] h-[207px]">
+      <a href="jul"><img src="/assets/grid-5.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-6.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500" ></a>
+      <a href="jul"><img src="/assets/grid-7.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-8.png" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
     </div>
   </div>
   <!-- SECTION 4 -->
@@ -175,7 +176,7 @@
     <div class="relative w-[90%] mx-auto top-16">
       <p class="text-lg leading-[3rem]" id="official">LATEST</p>
       <h1 class="text-[5rem] text-[#ebdfd5]">NEWS</h1>
-      <button class="flex justify-end bg-red-900 ml-auto">VIEW ALL NEWS</button>
+      <button class="flex justify-end ml-auto font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200">VIEW ALL NEWS</button>
     </div>
     <!-- COL 1  -->
     <a href="jujujul" class="group" id="section4-col1"> 
@@ -183,36 +184,36 @@
         <div class="w-[499px] h-[590px] bg-[#000000]">
           <img src="/assets/darkest-dungeon-switch-hero.webp" class="w-[499px] h-[280px] group-hover:scale-105 ease-in-out duration-200" id="">
           <div class="w-[80%] mx-auto">
-            <h1 class="text-[2.125rem] text-[#ebdfd5] ml-auto flex group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] ease-in-out duration-200">Darkest Dungeon: iPad fix</h1>
+            <h1 class="font-['germania_one'] text-[2.125rem] text-[#ebdfd5] ml-auto flex group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] ease-in-out duration-200">Darkest Dungeon: iPad fix</h1>
             <p class="text-lg text-[#9b1600]">May 2, 2022</p>
           </div>
-          <button class="flex mx-auto relative justify-center my-[14.3rem]     bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] group-hover:text-[#9b1600] group-hover:bg-white group-hover:bg-clip group-hover:bg-none ease-in-out duration-200">READ MORE</button>
+          <button class="font-['germania_one'] flex mx-auto relative justify-center my-[12.5rem] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] group-hover:text-[#9b1600] group-hover:bg-white group-hover:bg-clip group-hover:bg-none ease-in-out duration-200" id="section4-col1-btn">READ MORE</button>
         </div>  
     </a>
       <!-- COL 2  -->
-      <a href="JUL EN Y" id="section4-col2">
+      <a href="JUL EN Y" id="section4-col2" class="group">
         <div class="w-[499px] h-[590px] bg-[#000000]">
-          <img src="/assets/darkest-dungeon-switch-hero.webp" class="w-[499px] h-[280px]">
+          <img src="/assets/darkest-dungeon-switch-hero.webp" class="w-[499px] h-[280px] group-hover:scale-105 ease-in-out duration-200">
           <div class="w-[80%] mx-auto">
-            <h1 class="text-[2.125rem] text-[#ebdfd5]  ml-auto flex">Darkest Dungeon: iOS fix Coming</h1>
+            <h1 class="font-['germania_one'] text-[2.125rem] text-[#ebdfd5]  ml-auto flex group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] ease-in-out duration-200">Darkest Dungeon: iOS fix Coming</h1>
             <p class="text-lg text-[#9b1600]" id="may-2">February 15, 2022</p>
             <p class="text-lg text-[#938582]" id="may-2">Ruin has come to our tablets.</p>
             <br>
             <p class="text-lg text-[#938582]" id="may-2">It was brought to our attention that some functionality in the iOS version of Darkest Dungeon is broken</p>
           </div>
-          <button class="bg-red-900 flex mx-auto relative justify-center my-[5.3rem]">READ MORE</button>
+          <button class="font-['germania_one'] flex mx-auto relative justify-center my-[3rem] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] group-hover:text-[#9b1600] group-hover:bg-white group-hover:bg-clip group-hover:bg-none ease-in-out duration-200 " id="section4-col2-btn">READ MORE</button>
         </div>  
       </a>
       <!-- COL 3  -->
-      <a href="JUUUL" id="section4-col3">
+      <a href="JUUUL" class="group" id="section4-col3">
         <div class="w-[499px] h-[590px] bg-[#000000]">
-          <img src="/assets/6-this-is-fine-2-862x420.webp" class="w-[499px] h-[280px]">
+          <img src="/assets/6-this-is-fine-2-862x420.webp" class="w-[499px] h-[280px] group-hover:scale-105 ease-in-out duration-200">
           <div class="w-[80%] mx-auto">
-            <h1 class="text-[2.125rem] text-[#ebdfd5]  ml-auto flex">Darkest Dungeon: iPad fix</h1>
+            <h1 class="font-['germania_one'] text-[2.125rem] text-[#ebdfd5] ml-auto flex  group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] ease-in-out duration-200">Darkest Dungeon: iPad fix</h1>
             <p class="text-lg text-[#9b1600]" id="may-2">October 26, 2021</p>
             <p class="text-lg text-[#938582]" id="may-2">Hello everyone! With Darkest Dungeon 2 early access release around the corner, we decided to do a Runaway Fanart for the August Discord contest! We had 19 amazing entries which you can see below!</p>
           </div>
-          <button class="bg-red-900 flex mx-auto relative justify-center my-[7.3rem]">READ MORE</button>
+          <button class="font-['germania_one'] flex mx-auto relative justify-center my-[5.8rem] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] group-hover:text-[#9b1600] group-hover:bg-white group-hover:bg-clip group-hover:bg-none ease-in-out duration-200 " id="section4-col3-btn">READ MORE</button>
         </div>  
       </a>
     </div>
@@ -228,15 +229,15 @@
       <img src="/assets/crimson-court-logo.webp" class="mx-auto w-[320px] h-[178] ">
       <svg viewBox="0 0 798 4" class="block my-2"><path d="M792.771 1.437 745.686 2.96l-40.966-.6L453.988.855l-10.543 1.908-5.172-1.767-42.481.179-20.528-.207-50.413-.047-91.35.012-6.731.617L213.2.844l-141.841.439-70.733.574 108.759.318 78.874.479 30.035 1.186 20.319-1.376 82.082.711 25.282.319 16.761-.283 16.064-.71 23.028.915 191.52.435 7.603-1.076 9.686.933 186.636-.376-4.504-1.895Z" fill="#fff" fill-opacity=".17"></path></svg>
       <div class="justify-center flex">
-        <p class="text-[#9b1600] text-lg mx-4" id="overview">OVERVIEW</p>
+        <p class="font-['germania_one'] text-[#9b1600] text-lg mx-4" id="overview">OVERVIEW</p>
         <button class="text-white text-lg mx-4" id="section5-features-btn">FEATURES</button>
       </div>
       <svg viewBox="0 0 798 4" class="block my-2"><path d="M792.771 1.437 745.686 2.96l-40.966-.6L453.988.855l-10.543 1.908-5.172-1.767-42.481.179-20.528-.207-50.413-.047-91.35.012-6.731.617L213.2.844l-141.841.439-70.733.574 108.759.318 78.874.479 30.035 1.186 20.319-1.376 82.082.711 25.282.319 16.761-.283 16.064-.71 23.028.915 191.52.435 7.603-1.076 9.686.933 186.636-.376-4.504-1.895Z" fill="#fff" fill-opacity=".17"></path></svg>
       <div class="inline-block flex text-[1.75rem] justify-center my-4">
-        <h1 id="DLC">DLC:</h1> <h1 class="text-white ml-2">The Crimson Court</h1>
+        <h1 class="font-['germania_one']" id="DLC">DLC:</h1> <h1 class="font-['germania_one'] text-white ml-2">The Crimson Court</h1>
       </div>
       <p id="section5" class="text-lg">Darkest Dungeon®: The Crimson Court is the first expansion for the award-winning grim and gothic RPG by Red Hook Studios. Crimson Court is a parallel campaign experienced alongside the main Darkest Dungeon content that will provide you with new challenges and variation at every difficulty level. The narrative grounding sheds some light on the Ancestor’s early days, and will be presented in the same style of cut-scenes you’ve seen elsewhere in the game.</p>
-      <button class="flex mt-16 mx-auto" id="section5-buynow-btn">Buy now</button>
+      <button class="font-['germania_one'] flex mt-16 mx-auto" id="section5-buynow-btn">Buy now</button>
     </div>  
   </div>
 
@@ -248,9 +249,9 @@
         <img src="/assets/main-merch-graphic.png" class="mt-32 right-[120px] relative flex">
       </div>
       <div class="w-[30%]  mt-[200px] mx-4 mt-[350px] relative"> <!-- DIV de la partie droite - logo etc -->
-        <h2 class="text-[5.625rem] text-[#ebdfd5] mx-auto"> OFFICIAL MERCH</h2>
+        <h2 class="font-['germania_one'] text-[5.625rem] text-[#ebdfd5] mx-auto"> OFFICIAL MERCH</h2>
         <p class="mx-auto text-lg mt-8" id="merch-p">We’ve got an incredible collection of official merchendise for Darkest Dungeon so why not take a look. We’ve got all sorts of interesting items from T’s and pins to artwork and diaoramas!</p>
-        <button class="mt-6" id="section6-button">VISIT STORE</button>
+        <button class="font-['germania_one'] mt-6" id="section6-button">VISIT STORE</button>
       </div>
     </div>
   </div>

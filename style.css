@@ -147,6 +147,12 @@ button {
     vertical-align: middle;
 }
 
+#section4-col1-btn, #section4-col2-btn, #section4-col3-btn {
+    clip-path: url(#btn-bg) !important;
+}
+
+
+
 #section5-buynow-btn:hover {
     background: white;
     color:#9b1600;
