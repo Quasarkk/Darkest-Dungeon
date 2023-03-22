@@ -121,20 +121,40 @@ footer {
     --tw-transform:
 }
 
+
+
 button {
     font-family: 'germania one';
     color: white;
     font-size: 20px;
-    background: #9b1600 url(/assets/texture.jpg);
     background-blend-mode: multiply;
-    clip-path: url(#btn-bg) ;
+    z-index: 100;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
 }
+
+/* SECTION 4 */ 
 
 /* SECTION 5 */ 
 #section5-buynow-btn {
     width: 150px;
     height: 49px;
     clip-path: url(#btn-bg) !important;
+    background: #9b1600 url(/assets/texture.jpg);
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#section5-buynow-btn:hover {
+    background: white;
+    color:#9b1600;
+    transition: ease-in-out .2s;
+}
+
+#section5-features-btn:hover {
+    text-shadow: 0 0 20px hsla(0,0%,100%,.6) !important;
 }
 
 /* SECTION 6 */ 
@@ -142,6 +162,7 @@ button {
     height: 49px;
     width: 169px;
     clip-path: url(#btn-bg) !important;
+    background: #9b1600 url(/assets/texture.jpg);
 }
 
 #section6-button:hover {
@@ -161,7 +182,6 @@ button {
     filter: drop-shadow(0 -50px 100px #000);
     /* box-shadow: 0 0 600px 50px #9b1600; */
 }
-
 
 #section7-col2::before {
     width: 12px;
