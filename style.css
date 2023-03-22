@@ -17,78 +17,81 @@ h1:germania one
 a:font-family: Balthazar,serif;
 */
 
-
-
-h1, h2 {
-    font-family: 'germania one' !important;
-    z-index: 100;
+#section4-col1-btn, #section4-col2-btn, #section4-col3-btn, #section1-btn1, #section1-btn2,  #section1-btn3 {
+    clip-path: url(#btn-bg) !important;
 }
 
-#about-the-game {
-    font-family: 'germania one' !important;
+#header-store-btn {
+    clip-path: url(#merch-btn) !important;
 }
 
-.bg-vid {
-    z-index: 0;
+#header-buynow-btn {
+    clip-path: url(#buy-btn) !important;
 }
 
-/*
-.dd-logo {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 0, 0, 0.5));
-         filter: drop-shadow(12px 12px 7px rgba(255, 0, 0, 0.5));
-}
-*/
 
+/* section bg  clip-path*/
 
-/*
-a:hover {
-    color:red
-}
-*/
-
-/*TEXT DECO : BOOTSTRAP ME BAISE*/
-a, p {
-    /*font-family: Balthazar,serif;*/
-    color: #8D8782;
-    text-decoration: none !important; 
-}
-
-/* BAISE DE BOOTSTRAP*/
-p {
-    margin-bottom: 0px;
-}
-
-#merch-btn {
-    -webkit-clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#merch-btn) !important;
-    clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#merch-btn) !important;
-}
-
-button {
-    -webkit-clip-path: url(https://www.darkestdungeon.com/#merch-btn) !important;
-    clip-path: url(https://www.darkestdungeon.com/#merch-btn) !important;
-}
-
-#bg-img {
+/* SECTION 2 BG CLIP-PATH */
+#bg-img, #section2 {
     clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#section-mask-lg) !important;
 }
 
-/* bon lien clip-path: url(https://www.darkestdungeon.com/darkest-dungeon/#merch-btn) */
-
-#key-feature1 {
-    font-family: 'germania one' !important;
+#game-name {
+    background: #1F1F20;
+    background-blend-mode: multiply;
+    clip-path: url(#switch-text);
+    content: '';
+    width: 191px;
+    height: 37px;
+    top: 10px;
 }
 
-#key-feature2 {
-    font-family: 'germania one' !important;
+#I {
+    width: 48px;
+    height: 37px;
+    clip-path: url(#switch-1);
+    background: #9b1600 url(/assets/texture.jpg);
+    background-blend-mode: multiply;
 }
 
-#key-feature3 {
-    font-family: 'germania one' !important;
+#II {
+    width: 48px;
+    height: 37px;
+    clip-path: url(#switch-2);
+    background: #514C48 url(/assets/texture.jpg);
+    background-blend-mode: multiply;
 }
 
-footer {
-    background-image: url(/assets/background-village.jpg);
+
+/* FOOTER BG CLIPATH */ 
+#footer-bg::after {
+    content:"";
+    clip-path: url(#section-mask);
+    height: 210px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 100%;
+    overflow: hidden;
 }
+
+/* SECTION 7 */ 
+#section7-bg{
+    clip-path: url(#section-mask-lg);
+}
+
+
+
+/*TEXT DECO RESET*/
+a, p {
+    /*font-family: Balthazar,serif;*/
+    color: #8D8782;
+}
+
+
+
 
 #official, #overview, #features {
     font-family: 'germania one' !important;
@@ -122,7 +125,7 @@ footer {
 }
 
 
-
+/*
 button {
     font-family: 'germania one';
     color: white;
@@ -133,7 +136,7 @@ button {
     text-align: center;
     display: inline-block;
     margin: auto;
-}
+}*/
 
 /* SECTION 4 */ 
 
@@ -146,11 +149,6 @@ button {
     justify-content: center;
     vertical-align: middle;
 }
-
-#section4-col1-btn, #section4-col2-btn, #section4-col3-btn {
-    clip-path: url(#btn-bg) !important;
-}
-
 
 
 #section5-buynow-btn:hover {
@@ -178,17 +176,13 @@ button {
     
 }
 
-/* SECTION 7 */ 
-#section7-bg{
-    clip-path: url(#section-mask-lg);
-    
-}
 
 #section7 {
     filter: drop-shadow(0 -50px 100px #000);
     /* box-shadow: 0 0 600px 50px #9b1600; */
 }
 
+/* SEPARATOR CLIP PATH */ 
 #section7-col2::before {
     width: 12px;
     height: 320px;
@@ -257,22 +251,12 @@ button {
     content: "";
     width: 8px;
     height: 80px;
+    clip-path: url(#footer-separator);
     opacity:60%;
     position:absolute;
     clip-path: url(#footer-separator);
 }
 
-/* FOOTER BG CLIPATH */ 
-#footer-bg::after {
-    content:"";
-    clip-path: url(#section-mask);
-    height: 210px;
-    width: 100%;
-    background: black;
-    position: absolute;
-    z-index: -1;
-    opacity: 100%;
-    overflow: hidden;
-}
+
 
 /* SECTION 5 BARONNE BOTTOM-85 */ 

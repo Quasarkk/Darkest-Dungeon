@@ -9,106 +9,140 @@
 </head>
 
 <body>
+  <!-- CUSTOM TAILWIND -->
+  <script>
+    tailwind.config = {
+      theme: {
+    extend: {
+      dropShadow: {
+        '4xl': [
+            '0 0 10px rgb(155, 22, 0)',
+            '0 0 30px rgb(155, 22, 0)'
+        ]
+      }
+    }
+  }
+}
+  </script>
+
   <!-- HEADER -->
   <nav class="flex justify-center inset-0 z-20  h-auto z-999">
     <img src="/assets/navbar-background.svg" class=" opacity-90 fixed w-full h-auto">
-    <div class="fixed flex w-4/5 z-3 justify-between">
-      <a href="/darkest-dungeon" class="group w-20 flex mb-4 -mt-6">
-        <svg xmlns="http://www.w3.org/2000/svg" data-v-6a8f98c4="" viewBox="0 0 91 143"><path data-v-6a8f98c4="" fill="#000000" d="M0 17.309v89.143l8.654 3.028c-7.843 2.327-7.789 5.626-7.789 5.626L0 138.474l12.982 4.327 16.444-3.462 11.251-4.219 1.731 5.085 11.197-1.731h15.514l2.715-5.193 1.73 6.058 12.117.866V96.932L79.623 90.8c9.466-2.469 8.438-18.426 8.438-18.426-6.816-2.272.216-10.926.216-10.926l2.597-57.121L.865 0 0 17.309Z" class="group-hover:fill-[#9B1600]"/>
+    <div class="fixed flex w-[90%] z-3 justify-between">
+      <a href="/darkest-dungeon" class="group flex mb-4 -mt-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-[90px]" data-v-6a8f98c4="" viewBox="0 0 91 143"><path data-v-6a8f98c4="" fill="#000000" d="M0 17.309v89.143l8.654 3.028c-7.843 2.327-7.789 5.626-7.789 5.626L0 138.474l12.982 4.327 16.444-3.462 11.251-4.219 1.731 5.085 11.197-1.731h15.514l2.715-5.193 1.73 6.058 12.117.866V96.932L79.623 90.8c9.466-2.469 8.438-18.426 8.438-18.426-6.816-2.272.216-10.926.216-10.926l2.597-57.121L.865 0 0 17.309Z" class="group-hover:fill-[#9B1600]"/>
         </svg>
-        <img src="/assets/torch.webp" class="w-20 h-max px-4 mt-[25px] fixed">
+        <img src="/assets/torch.webp" class="w-[60px] h-[90px] mx-3 mt-[37px] fixed">
       </a>
-
-      <div class="flex w-4/5 justify-end items-center inline-block mb-14">
-        <p class="mx-2">DARKEST DUNGEON</p>
-        <a href="/darkest-dungeon/about" class="px-2 hover:text-[#9B1600]">About</a>
-        <a href="/darkest-dungeon/dlc"class="px-2 border-l-2 border-[#291E1B] hover:text-[#9B1600]">DLC</a>
-        <a href="/darkest-dungeon/community"class="px-2 border-l-2 border-[#291E1B] hover:text-[#9B1600]">Community</a>
-        <a href="/darkest-dungeon/medias"class="px-2 border-l-2 border-[#291E1B] hover:text-[#9B1600]">Media</a>
-        <a href="/darkest-dungeon/news"class="px-2 border-l-2 border-[#291E1B] hover:text-[#9B1600]">News</a>
-        <a href="/darkest-dungeon/discord">
-          <svg class="svg-inline--fa fa-discord mx-2 hover:fill-[#9B1600]" height="2em" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>
-        </a>
-        <a href="/darkest-dungeon/facebook"> 
-          <svg class="svg-inline--fa fa-facebook mx-2" height="2em" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
-        </a>
-        <a href="/darkest-dungeon/twitter">
-          <svg class="svg-inline--fa fa-twitter mx-2" height="2em" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-        </a>
-        <a href="/darkest-dungeon/youtube">
-          <svg class="svg-inline--fa fa-youtube mx-2" height="2em" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
-        </a>
-        <a href="/darkest-dungeon/instagram">
-          <svg class="svg-inline--fa fa-instagram mx-2" height="2em" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-        </a>
+      <!-- GAME NAME + SWITCH -->
+      <div class="flex w-4/5 justify-end items-center inline-block mb-14 relative left-[20px]">
+        <div class="mx-36" id="game-name">
+          <p class="mx-2 font-['Balthazar'] flex justify-center align-middle top-[5px] relative text-white opacity-40" >DARKEST DUNGEON</p>
+        </div>
+        <div class="relative right-[160px]" id="I">
+          <p class="font-['germania_one'] text-[16px] flex justify-center align-middle top-[5px] relative text-white">I</p>
+        </div>
+        <div class="relative right-[160px]" id="II">
+          <p class="font-['germania_one'] text-[16px] flex justify-center align-middle top-[5px] relative text-white">II</p>
+        </div>
+        <!--  TEXT SECTION -->
+        <div class="relative flex right-[120px]">
+          <a href="/darkest-dungeon/about" class="px-2 font-['Balthazar'] text-[18px] text-white opacity-50 hover:text-[#9B1600] hover:opacity-100">About</a>
+          <a href="/darkest-dungeon/dlc"class="px-2 font-['Balthazar'] text-[18px] text-white opacity-50 border-l-2 border-[#291E1B] hover:text-[#9B1600] hover:opacity-100">DLC</a>
+          <a href="/darkest-dungeon/community"class="px-2 font-['Balthazar'] text-[18px] text-white opacity-50 border-l-2 border-[#291E1B] hover:text-[#9B1600] hover:opacity-100">Community</a>
+          <a href="/darkest-dungeon/medias"class="px-2 font-['Balthazar'] text-[18px] text-white opacity-50 border-l-2 border-[#291E1B] hover:text-[#9B1600] hover:opacity-100">Media</a>
+          <a href="/darkest-dungeon/news"class="px-2 font-['Balthazar'] text-[18px] text-white opacity-50 border-l-2 border-[#291E1B] hover:text-[#9B1600] hover:opacity-100">News</a>
+        </div>
+        <!-- SOCIALS ICONS -->
+        <div class="inline-flex relative right-[80px]">
+          <a href="/darkest-dungeon/discord ">
+            <svg class="svg-inline--fa fa-discord mx-2 hover:fill-[#9B1600]" height="24px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]"  fill="#72716F" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>
+          </a>
+          <a href="/darkest-dungeon/facebook"> 
+            <svg class="svg-inline--fa fa-facebook mx-2" height="24px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+          </a>
+          <a href="/darkest-dungeon/twitter">
+            <svg class="svg-inline--fa fa-twitter mx-2" height="24px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+          </a>
+          <a href="/darkest-dungeon/youtube">
+            <svg class="svg-inline--fa fa-youtube mx-2" height="24px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+          </a>
+          <a href="/darkest-dungeon/instagram">
+            <svg class="svg-inline--fa fa-instagram mx-2" height="24px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path class="hover:fill-[#9B1600]" fill="#72716F" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+          </a>
+        </div>
       </div>
-      <button class="mx-2 w-152px h-120px bg-fill:red" type="button">Store</button>
-      <button class="button mx-2" type="button">Buy now</button>
+      <button class="group font-['germania_one'] relative bottom-[40px] mx-1 bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#3e0909] w-[95px] h-[120px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none hover:translate-y-[0.6rem] ease-in-out duration-300" type="button" id="header-store-btn">
+        <p class="text-white text-[20px] relative top-[20px] group-hover:text-[#9b1600]">Store</p>
+      </button>
+      <button class="group font-['germania_one'] relative bottom-[40px] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] w-[152px] h-[120px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none hover:translate-y-[0.6rem] ease-in-out duration-300" type="button" id="header-buynow-btn">
+        <p class="text-white text-[20px] relative top-[20px] group-hover:text-[#9b1600]">Buy now</p>
+      </button>
     </div>
   </nav>
   <!-- SECTION 1 -->
   <div class="justify-center place-content-center self-center flex">
     <video src="/assets/dd1-loop.mp4" class="-z-10 absolute" autoplay loop muted></video>
     <div class="flex flex-col justify-center content-center w-3/5 h-900px z-2 mx-auto my-14">
-      <img src="/assets/darkest-dungeon-logo.webp" class="w-3/5 mx-auto drop-shadow-[0_0_10px_rgb(155,22,0)] drop-shadow-[0_0_30px_rgb(155,22,0)]">
+      <img src="/assets/darkest-dungeon-logo.webp" class="w-[500px] justify-center mx-auto drop-shadow-4xl">
       <!-- LOGOS PLATEFORMES -->
-      <ul class="inline-flex mx-auto my-8">
-        <li><a href="epicagmes"> <svg width="45" height="68" viewBox="0 0 45.187 68.875">
+      <ul class="justify-center my-10 inline-flex  relative">
+        <li><a href="epicagmes"> <svg class="h-[32px]" width="45" height="68" viewBox="0 0 45.187 68.875">
           <path class="hover:fill-[#9B1600]" d="M19.718 17.016a.908.908 0 00.7-1c.009-1.767.015-3.536 0-5.3a.92.92 0 00-.689-.994 11.593 11.593 0 00-1.677-.028c0 2.456-.009 4.915 0 7.371.554-.018 1.113.021 1.666-.049zm-3.289 14.591a15.147 15.147 0 00-.7 1.724h1.378c-.22-.576-.455-1.15-.678-1.724zM43.77 45.161a1688.301 1688.301 0 01-8.546 3.584c-3.388 1.42-6.892 2.884-10.327 4.346a5.2 5.2 0 01-2.343.577 4.4 4.4 0 01-1.6-.294l-.018-.007-.014-.008a4901.117 4901.117 0 00-10.774-4.523c-2.809-1.175-5.718-2.391-8.573-3.593a4.8 4.8 0 01-1.578-.993c.015 7.022 0 14.039.013 21.067a3.732 3.732 0 001.2 2.887 4.964 4.964 0 002.891.68q18.639-.008 37.275 0a3.68 3.68 0 003.193-1.307 5.042 5.042 0 00.588-2.616V44.279a4.265 4.265 0 01-1.387.882zm-32.455 17.38a3.28 3.28 0 01-3.138-.77 2.787 2.787 0 01-.554-1.434c.539 0 1.076-.011 1.615-.013a1.355 1.355 0 001.857.688.4.4 0 00.016-.738c-.982-.549-2.361-.51-3.03-1.543a2.026 2.026 0 011.245-2.9 3.221 3.221 0 012.983.528 2.312 2.312 0 01.652 1.606c-.538.01-1.076.01-1.612-.007a1.086 1.086 0 00-1.944-.285c.469.733 1.45.724 2.169 1.078a1.785 1.785 0 011.408 1.837 1.956 1.956 0 01-1.667 1.953zm7.574-5.28c-.592 0-1.182 0-1.776-.009-.006 1.745.007 3.494 0 5.244-.549-.009-1.1-.009-1.643-.009-.006-1.749.019-3.494-.017-5.242-.593.007-1.188.011-1.782.007 0-.478.006-.956.009-1.432 1.744.018 3.486-.035 5.227.034-.011.466-.016.933-.018 1.407zm4.953 5.063a3.571 3.571 0 01-3.178-.124 2.227 2.227 0 01-1.008-1.977c.019-.849-.038-1.7.035-2.549a2.223 2.223 0 011.755-1.889 3.279 3.279 0 013.075.734c.8.93.483 2.229.547 3.344a2.427 2.427 0 01-1.226 2.461zm6.3.142c-.411-.82-.91-1.591-1.335-2.406h-.675c.006.811.006 1.617.006 2.427-.548 0-1.095 0-1.643-.013 0-2.218-.014-4.435.015-6.652 1.08.007 2.163-.047 3.243.026a1.858 1.858 0 011.642 1.106 2.493 2.493 0 01-.841 2.937c.422.856 1.18 1.6 1.25 2.583-.552.017-1.104.017-1.66-.008zm7.352.017c-1.488.013-2.973.017-4.462 0 .022-2.223-.011-4.44.013-6.663 1.48 0 2.963-.017 4.44.018q-.01.709-.01 1.423c-.94-.009-1.874-.014-2.807 0 0 .407 0 .814.01 1.224.788-.015 1.579-.019 2.364-.015.006.437.015.87.029 1.308-.8.064-1.608.038-2.416.034-.009.414-.015.827-.009 1.239.955 0 1.9.007 2.858 0-.009.48-.015.96-.008 1.432zm-15.5-5.256a.923.923 0 00-.707.988 16.913 16.913 0 00.064 2.36 1.149 1.149 0 002.052-.161c.029-.855.034-1.713-.01-2.568a1.108 1.108 0 00-1.402-.615zm6.143.046c.006.476 0 .95-.013 1.422a3.491 3.491 0 001.732-.212 4.862 4.862 0 00-.04-1.051 3.7 3.7 0 00-1.682-.159zM2.051 44.062c6.452 2.714 12.918 5.4 19.365 8.123a3.177 3.177 0 001.141.207 3.984 3.984 0 001.807-.456c6.3-2.678 12.625-5.286 18.929-7.955a2.943 2.943 0 001.794-2c.14-2.285.041-4.579.071-6.864V3.823a3.947 3.947 0 00-1-2.956 4.405 4.405 0 00-2.939-.848H4.078a4.662 4.662 0 00-3.015.794A3.981 3.981 0 00-.001 3.83v36.565A10.591 10.591 0 00.12 42.14a3.111 3.111 0 001.928 1.922zm11.024-8.322c.889-2.028 1.718-4.08 2.6-6.111H17.2c.82 2.045 1.735 4.051 2.544 6.1-.566 0-1.13 0-1.7.013-.145-.378-.295-.751-.442-1.126a57.068 57.068 0 00-1.171-.013c-.411 0-.819 0-1.228.013a6.211 6.211 0 01-.469 1.107c-.215.012-.43.019-.647.019-.275 0-.554-.009-.83-.009zm9.365 12.408c-2.88-.907-5.723-1.945-8.581-2.918q4.473-.022 8.946-.026 4.23 0 8.459.03-4.401 1.497-8.827 2.914zm15.058-12.569a3.71 3.71 0 01-1.413.27 4.37 4.37 0 01-2.725-.974c.3-.375.6-.74.915-1.1a3.308 3.308 0 001.875.711 2.24 2.24 0 00.522-.065l.349-.409c-.661-.793-1.853-.551-2.654-1.124a1.767 1.767 0 01.185-2.97 3.053 3.053 0 011.44-.344 4.324 4.324 0 012.406.786c-.281.388-.554.779-.825 1.171a3.135 3.135 0 00-1.6-.578 1.678 1.678 0 00-.4.045.411.411 0 00-.225.646c.882.467 2.008.394 2.758 1.11a1.792 1.792 0 01-.611 2.825zM29.685 9.285a2.9 2.9 0 011.573-2.105 5.3 5.3 0 012.289-.38c.288 0 .577.006.867.006h.421a3.736 3.736 0 012.687.9 3.636 3.636 0 01.922 2.662c0 1.418-.008 2.834 0 4.25-.549 0-1.106.007-1.659.007-.45 0-.9 0-1.351-.02.021-1.351.021-2.7.008-4.049a.961.961 0 00-.807-1.015 9.162 9.162 0 00-.642-.028 2.989 2.989 0 00-.82.1 1.146 1.146 0 00-.552 1.128c0 4.249-.008 8.5.007 12.746a.96.96 0 00.774 1.012 6.67 6.67 0 00.711.042 3.927 3.927 0 00.716-.061.972.972 0 00.669-1.01c.008-1.541.017-3.085-.006-4.625.538-.01 1.078-.016 1.617-.016.471 0 .944 0 1.416.018-.018 1.607.009 3.211-.011 4.816a3.522 3.522 0 01-1.38 3.027 4.546 4.546 0 01-2.557.56c-.306 0-.609-.007-.905-.007H33.23a3.6 3.6 0 01-2.893-1.1 4.64 4.64 0 01-.79-3.025V12.739a20.2 20.2 0 01.135-3.454zm-1.694 20.408h2.382c.8 0 1.6 0 2.395-.007 0 .457 0 .914.008 1.372h-1.325q-.936 0-1.869-.008c0 .331 0 .664.009 1H32.443v1.29c-.435.009-.867.011-1.305.011h-1.56v.988c.635 0 1.264.006 1.9.006.44 0 .877 0 1.315-.012.007.467.016.936.024 1.4H29.709c-.567 0-1.138 0-1.7.013-.045-2.015-.017-4.034-.021-6.053zm-3.1-22.726h1.872c.4 0 .807 0 1.215.011-.03 6.694.01 13.389-.02 20.079-1.022-.008-2.047 0-3.072-.007.02-6.691-.003-13.386.003-20.083zm.171 22.73h1.706c-.022 2.019.013 4.041-.022 6.06a86.124 86.124 0 00-1.245-.011h-.338c-.015-1.183.015-2.363-.021-3.543a97.436 97.436 0 01-1.57 2.412c-.526-.781-.992-1.6-1.553-2.355-.012 1.162 0 2.323-.008 3.484h-.575c-.342 0-.685 0-1.026-.008 0-2.007.014-4.011-.007-6.02h.015c.344 0 .7-.037 1.047-.037a2.869 2.869 0 01.7.075c.5.749.953 1.524 1.413 2.295.522-.76.976-1.575 1.482-2.352zM14.995 6.967c.525.006 1.047.006 1.571.006h1.909c.525 0 1.046 0 1.568.006a3.544 3.544 0 012.629 1.015 3.927 3.927 0 01.834 2.736c-.009 1.88.008 3.759-.009 5.64a3.288 3.288 0 01-1.427 2.885 4.848 4.848 0 01-2.526.528c-.408 0-.819-.014-1.22-.014h-.273v7.291h-3.064c-.001-6.701-.019-13.398.006-20.093zm-8.311 0q1.648.014 3.3.014 1.734 0 3.472-.011-.006 1.387 0 2.777H9.712c-.025 1.894.022 3.787.036 5.681h3.561c.01.933 0 1.871 0 2.8-.6.008-1.187.01-1.78.01H9.753c-.117 2.021.01 4.054-.07 6.079.5-.032 1.007-.041 1.513-.041.478 0 .952.007 1.43.007.293 0 .585 0 .881-.01q-.039 1.385 0 2.773H6.676q.019-10.038.006-20.076zm1.015 23.368a3.374 3.374 0 012.2-.777 3.589 3.589 0 012.319.823 4.91 4.91 0 01-.873 1.2 2.589 2.589 0 00-1.483-.584 1.418 1.418 0 00-.651.154 1.812 1.812 0 00-.194 3.045 1.734 1.734 0 00.934.258 2.08 2.08 0 00.915-.212 2.055 2.055 0 00.078-.823c-.4 0-.8.007-1.192.009v-1.209c.913 0 1.826 0 2.738.008 0 .9.005 1.8 0 2.7a4.234 4.234 0 01-2.59.936 3.672 3.672 0 01-.815-.094 3.008 3.008 0 01-2.344-2.146 3.144 3.144 0 01.956-3.285z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg></a></li>
-        <li><a href="xbox"> <svg width="66" height="66" viewBox="0 0 66.126 66.124">
+        <li><a href="xbox"> <svg class="h-[32px]" width="66" height="66" viewBox="0 0 66.126 66.124">
           <path class="hover:fill-[#9B1600]" d="M24.002 18.362a.171.171 0 00.05-.1.152.152 0 00-.064-.109C12.793 7.009 9.801 9.561 9.847 9.526a33.048 33.048 0 00-3.078 43.547.148.148 0 00.178.061.14.14 0 00.038-.173C4.461 45.17 17.346 26.277 24.002 18.362zm32.3-8.833s-.007-.01-.032-.031l.028.031c.04.035-2.928-2.533-14.129 8.613a.154.154 0 00-.059.113.166.166 0 00.048.095c6.654 7.919 19.524 26.824 17.006 34.616a.136.136 0 00.038.173.148.148 0 00.177-.061 33.05 33.05 0 00-3.081-43.551zm-40.4-4.445c5.665-1.451 14.66 3.261 17.1 4.663a.141.141 0 00.074.027.11.11 0 00.066-.027c.922-.553 10.652-6.084 17.046-4.7a.13.13 0 00.161-.058.127.127 0 00-.052-.164 33.076 33.076 0 00-34.494.031.132.132 0 00-.058.166.131.131 0 00.157.06zm38.936 52.845l-.009.008a.011.011 0 01.009-.008zM33.174 26.554a.182.182 0 00-.1-.049.232.232 0 00-.116.049c-9.882 7.525-26.81 26.127-21.653 31.383a33.053 33.053 0 0043.522 0c5.177-5.256-11.757-23.858-21.651-31.383z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg></a></li>
-        <li><a href="playstation"> <svg width="83" height="64" viewBox="0 0 83.75 64.624">
+        <li><a href="playstation"> <svg class="h-[32px]" width="83" height="64" viewBox="0 0 83.75 64.624">
           <path class="hover:fill-[#9B1600]" d="M80.22 62.795a.232.232 0 01-.109-.159c0-.054-.019-.149-.027-.272l-.022-.453a.83.83 0 00-.123-.477.669.669 0 00-.21-.17 1 1 0 00.267-.262.949.949 0 00.147-.542.883.883 0 00-.527-.871 1.565 1.565 0 00-.675-.121h-1.653v3.544h.618v-1.451h.967a1.122 1.122 0 01.383.054.4.4 0 01.195.385l.032.565c.011.131.017.226.026.277a.46.46 0 00.042.134l.025.041h.689v-.2zm-.861-1.88a.864.864 0 01-.468.11h-.982v-1h1.044a.85.85 0 01.345.061.421.421 0 01.214.422.46.46 0 01-.153.404zm1.549-1.86a3.2 3.2 0 10.928 2.256 3.165 3.165 0 00-.928-2.256zm-2.258 4.911a2.655 2.655 0 112.645-2.661 2.651 2.651 0 01-2.645 2.661zm-64.9-11.744a14.871 14.871 0 008.168-.418l6.748-2.454v7.093c-.431.074-.9.156-1.338.223a44.267 44.267 0 01-21.033-1.695c-6.6-1.855-7.71-5.728-4.7-7.961a32.171 32.171 0 017.515-3.611l19.552-6.949v7.917l-14.069 5.038c-2.487.893-2.86 2.16-.842 2.817zm69.241-2.763c-1.641 2.059-5.642 3.539-5.642 3.539L47.54 63.705v-7.9l21.934-7.824c2.491-.889 2.877-2.148.852-2.81a14.868 14.868 0 00-8.165.416L47.54 50.739v-8.188l.835-.286a50.614 50.614 0 0110.161-2.16 43.507 43.507 0 0118.927 2.256c6.438 2.037 7.159 5.032 5.525 7.098zM50.372 36.017V15.823c0-2.365-.431-4.543-2.663-5.161-1.7-.554-2.753 1.034-2.753 3.4v50.56L31.31 60.289V.012a164.376 164.376 0 0118.8 5.145c11.544 3.97 15.461 8.905 15.461 20.02 0 10.835-6.691 14.947-15.198 10.84z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg></a></li>
-        <li><a href="switch"> <svg width="65" height="65" viewBox="0 0 65.875 65.813">
+        <li><a href="switch"> <svg class="h-[32px]" width="65" height="65" viewBox="0 0 65.875 65.813">
           <path class="hover:fill-[#9B1600]" d="M16.487 13.558a6.191 6.191 0 106.216 6.3 6.1 6.1 0 00-6.216-6.3zM30.843.009q-6.757.007-13.51 0a16.51 16.51 0 00-7.306 1.51c-6.227 3-9.766 8-9.9 14.9C-.082 27.427.061 38.442.085 49.453a15.279 15.279 0 00.367 2.991 16.274 16.274 0 004.812 8.666 16.892 16.892 0 0012.045 4.708h13.576c.83 0 .916-.084.916-.916V1c.005-.959-.027-.991-.958-.991zm-4.409 60.439c-.207.016-.387.036-.567.036-2.873 0-5.743.012-8.616 0a11.528 11.528 0 01-8.107-3.064 10.984 10.984 0 01-3.723-8.192c-.052-10.844-.023-21.689-.02-32.53a11.556 11.556 0 019.254-11.094 16.466 16.466 0 012.759-.249c2.767-.031 5.535-.012 8.3-.012h.718v55.105zm39.436-43.1a20.59 20.59 0 00-.354-3.735A16.8 16.8 0 0049.24.022c-3.3-.052-6.607-.011-9.912-.011-.938 0-.951.014-.951.926v63.757c0 1.118 0 1.118 1.09 1.118 3.183 0 6.362.016 9.545-.008a16.91 16.91 0 0016.872-17.045q.006-15.699-.014-31.408zM50.988 42.804a6.618 6.618 0 01.478-13.223 6.618 6.618 0 11-.478 13.226z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg></a></li>
-        <li><a href="humble bundle"> <svg width="61" height="60" viewBox="0 0 61.469 60.75">
+        <li><a href="humble bundle"> <svg class="h-[32px]" width="61" height="60" viewBox="0 0 61.469 60.75">
           <path class="hover:fill-[#9B1600]" d="M57.223 36.489c-1.156 4.693-3.147 9.1-6.917 11.4a7.619 7.619 0 01-4.873 1.264 1.913 1.913 0 01-.434-.146c-1.878-.844-1.952-4.121-2.049-6.722a47.419 47.419 0 01.345-6.722C44.66 22.824 47.819 10.876 50.551.006H41.59a230.128 230.128 0 00-6.094 24.4h-7.693c.613-8.833.656-19.259-4.872-22.943a8.576 8.576 0 00-7.549-.632C10.735 2.367 7.65 5.681 5.103 9.5a33.423 33.423 0 00-3.216 6.235 25.946 25.946 0 00-1.9 7.6v.874c1.433.02 2.738-.085 4.19-.048 1.269-4.64 3.273-9.16 7.112-11.445 1.162-.692 3.312-1.515 4.919-1.074 1.537.422 2.115 3.126 2.241 5.26a47.586 47.586 0 01-.195 7.064c-1.316 13.31-4.568 25.281-7.356 36.776h8.914a177.98 177.98 0 006.964-27.86c2.473.064 4.926-.141 7.308 0-.5 5.754-.983 12.94.145 18.559 1.057 5.242 3.756 10.278 10.378 8.912 5.069-1.043 8.793-4.857 11.248-8.526a35.636 35.636 0 005.6-14.171v-1.22c-1.462-.03-2.79.072-4.232.053z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg>
-        <li><a href="steam"> <svg width="64" height="65" viewBox="0 0 64.75 65.438">
+        <li><a href="steam"> <svg class="h-[32px]" width="64" height="65" viewBox="0 0 64.75 65.438">
           <path class="hover:fill-[#9B1600]" d="M32.318-.009a32.547 32.547 0 00-32.319 30.1l17.383 7.248a9.065 9.065 0 015.167-1.607c.172 0 .342 0 .512.014l7.729-11.307v-.158a12.231 12.231 0 1112.23 12.345h-.278l-11.026 7.935q.012.217.012.438a9.175 9.175 0 01-18.182 1.83L1.115 41.637A32.475 32.475 0 1032.318-.009zm-11.994 49.66l-3.983-1.665a6.854 6.854 0 0012.554-.338 6.95 6.95 0 00.012-5.316 6.853 6.853 0 00-8.8-3.854l4.116 1.726a5.125 5.125 0 012.73 6.691 5.061 5.061 0 01-6.629 2.756zm30.845-25.369a8.15 8.15 0 10-8.149 8.221 8.2 8.2 0 008.149-8.221zm-14.255-.014a6.121 6.121 0 116.118 6.174 6.146 6.146 0 01-6.118-6.174z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg>
-        <li><a href="gog"> <svg width="69" height="63" viewBox="0 0 69.188 63.062">
+        <li><a href="gog"> <svg class="h-[32px]" width="69" height="63" viewBox="0 0 69.188 63.062">
           <path class="hover:fill-[#9B1600]" d="M63.069 63.067H6.1a6.1 6.1 0 01-6.1-6.1V6.093a6.1 6.1 0 016.1-6.1h56.974a6.1 6.1 0 016.105 6.1v50.872a6.105 6.105 0 01-6.11 6.102zM8.132 49.842a3.05 3.05 0 003.05 3.049h11.192v-4.068h-9.155a1.016 1.016 0 01-1.017-1.015V41.7a1.018 1.018 0 011.017-1.015h9.157v-4.069H11.185a3.047 3.047 0 00-3.05 3.049v10.176zM24.41 13.215a3.052 3.052 0 00-3.052-3.051H11.185a3.05 3.05 0 00-3.05 3.051v10.174a3.051 3.051 0 003.05 3.051h7.123v-4.067h-5.086a1.019 1.019 0 01-1.017-1.018v-6.1a1.017 1.017 0 011.017-1.018h6.106a1.016 1.016 0 011.014 1.018v12.207a1.016 1.016 0 01-1.014 1.019H8.135v4.072h13.224a3.056 3.056 0 003.052-3.056V13.215zm0 26.451v10.176a3.052 3.052 0 003.052 3.049h10.173a3.052 3.052 0 003.053-3.049V39.666a3.049 3.049 0 00-3.053-3.049H27.469a3.049 3.049 0 00-3.056 3.049zm18.313-26.451a3.052 3.052 0 00-3.055-3.051h-10.17a3.05 3.05 0 00-3.05 3.051v10.174a3.051 3.051 0 003.05 3.051h10.171a3.051 3.051 0 003.053-3.051V13.215zm18.313 0a3.053 3.053 0 00-3.05-3.051H47.812a3.05 3.05 0 00-3.051 3.051v10.174a3.052 3.052 0 003.051 3.051h7.123v-4.067h-5.09a1.018 1.018 0 01-1.015-1.018v-6.1a1.016 1.016 0 011.015-1.018h6.106a1.017 1.017 0 011.018 1.014v12.207a1.017 1.017 0 01-1.017 1.019H44.759v4.072h13.225a3.057 3.057 0 003.053-3.056V13.215zm0 23.4h-15.26a3.047 3.047 0 00-3.05 3.049v13.225h4.072V41.7a1.015 1.015 0 011.014-1.015h2.033v12.2h4.07v-12.2h3.054v12.2h4.071V36.617zm-23.4-14.244h-6.1a1.018 1.018 0 01-1.019-1.018v-6.1a1.017 1.017 0 011.019-1.018h6.1a1.019 1.019 0 011.019 1.018v6.1a1.02 1.02 0 01-1.017 1.02zm-8.14 18.313h6.107a1.019 1.019 0 011.017 1.017v6.105a1.016 1.016 0 01-1.017 1.015h-6.107a1.016 1.016 0 01-1.017-1.015V41.7a1.02 1.02 0 011.019-1.014z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg>
-        <li><a href="apple"> <svg width="60" height="74" viewBox="0 0 60.344 74.031">
+        <li><a href="apple"> <svg class="h-[32px]" width="60" height="74" viewBox="0 0 60.344 74.031">
           <path class="hover:fill-[#9B1600]" d="M41.099 11.832A15.809 15.809 0 0044.926-.003 15.846 15.846 0 0033.298 6.44c-4.325 5.7-3.224 10.578-3.224 10.578s5.865 1.015 11.025-5.186zm9.28 27.4a16.078 16.078 0 018.007-14.028s-4.094-7.4-14.5-7.4c-6.046 0-10.691 3.44-13.193 3.44-2.915 0-7.267-3.233-12.875-3.233-8.626 0-17.822 7.723-17.822 22.446 0 14.965 10.865 33.581 19.465 33.581 3 0 7.611-3.023 12.256-3.023 4.558 0 7.92 2.915 12.246 2.915 9.418 0 16.391-19.626 16.391-19.626s-9.975-3.865-9.975-15.071z" fill="#ebdfd5" fill-rule="evenodd"></path>
           </svg>
       </ul>
       <!-- 3 BUTTONS -->
-      <ul class="inline-flex mx-auto justify-center">
-        <button class="mx-6 font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> BUY NOW </button>
-        <button class="mx-6 font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> DLC </button>
-        <button class="mx-6 font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> Trailer </button>
+      <ul class="justify-center flex ">
+        <button id="section1-btn1" class="mx-2 text-xl font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> BUY NOW </button>
+        <button id="section1-btn2" class="mx-2 text-xl font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> DLC </button>
+        <button id="section1-btn3" class="mx-2 text-xl font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200"> Trailer </button>
       </ul>
       <!-- PRIZES -->
       <ul class="inline-flex mx-auto my-12 justify-envenly gap-2">
         <li>
           <a href="AHHAAHHAHDCOBCOUEBZOUCBEOHBVCOE2B">
-            <img src="/assets/laurels-independent-games-festival-1.webp" alt="">
+            <img src="/assets/laurels-independent-games-festival-1.webp" alt="" class="w-[120px]">
           </a>
         </li>
         <li>
           <a href="AHHAAHHAHDCOBCOUEBZOUCBEOHBVCOE2B">
-            <img src="/assets/rockpaper-prize-2.webp" alt="">
+            <img src="/assets/rockpaper-prize-2.webp" alt="" class="w-[120px]">
           </a>
         </li>
         <li>
           <a href="AHHAAHHAHDCOBCOUEBZOUCBEOHBVCOE2B">
-            <img src="/assets/laurel-total-biscuit-3.webp" alt="">
+            <img src="/assets/laurel-total-biscuit-3.webp" alt="" class="w-[120px]">
           </a>
         </li>
         <li>
           <a href="AHHAAHHAHDCOBCOUEBZOUCBEOHBVCOE2B">
-            <img src="/assets/laurels-independent-games-festival-1.webp" alt="">
+            <img src="/assets/laurels-independent-games-festival-1.webp" alt="" class="w-[120px]">
           </a>
         </li>
         <li>
           <a href="AHHAAHHAHDCOBCOUEBZOUCBEOHBVCOE2B">
-            <img src="/assets/laurels-pc-gamer-5.webp" alt="">
+            <img src="/assets/laurels-pc-gamer-5.webp" alt="" class="w-[120px]">
           </a>
         </li>
       </ul>
@@ -120,7 +154,7 @@
     <img src="/assets/dd1-main-about.webp" class="relative right-32 bottom-24 z-4">
     <div class="w-[672px] ml-auto mr-36 relative -translate-y-[55.4rem]">
       <p class="text-[18px] z-2 text-[#675654]" id="about-the-game">ABOUT THE GAME</p>
-      <h1 class="text-[5rem] mb-6 leading-[4rem] text-[#ebdfd5] z-2">DESCEND INTO THE DARKEST DUNGEON</h1>
+      <h1 class="font-['germania_one'] text-[5rem] mb-6 leading-[4rem] text-[#ebdfd5] z-2">DESCEND INTO THE DARKEST DUNGEON</h1>
       <p class="text-lg my-2 text-[#938582]">Darkest Dungeon is a challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring. Recruit, train, and lead a team of flawed heroes against unimaginable horrors, stress, disease, and the ever-encroaching dark. Can you keep your heroes together when all hope is lost?</p>
       <button class="font-['germania_one'] bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200">EXPLORE MORE</button>
     </div>
@@ -159,16 +193,16 @@
         <button class="font-['germania_one'] flex justify-end relative ml-auto bg-[url('/assets/texture.jpg')] bg-blend-multiply bg-[#9b1600] text-white w-[150px] h-[49px] hover:text-[#9b1600] hover:bg-white hover:bg-clip hover:bg-none ease-in-out duration-200">VIEW ALL MEDIA</button>
     </div>
     <div class="relative w-[90%] mx-auto bottom-[410px] mt-6 justify-between flex">
-      <a href="jul"><img src="/assets/grid-1.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
-      <a href="jul"><img src="/assets/grid-2.png" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500" ></a>
-      <a href="jul"><img src="/assets/grid-3.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
-      <a href="jul"><img src="/assets/grid-4.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-1.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-2.png" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500" ></a>
+      <a href="jul"><img src="/assets/grid-3.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-4.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500"></a>
     </div>
     <div class="relative w-[90%] mx-auto bottom-[410px] mt-4 justify-between flex">
-      <a href="jul"><img src="/assets/grid-5.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
-      <a href="jul"><img src="/assets/grid-6.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500" ></a>
-      <a href="jul"><img src="/assets/grid-7.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
-      <a href="jul"><img src="/assets/grid-8.png" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 hover:border-4 hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-5.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-6.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500" ></a>
+      <a href="jul"><img src="/assets/grid-7.jpeg" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500"></a>
+      <a href="jul"><img src="/assets/grid-8.png" alt="" srcset="" class="w-[370px] h-[207px] hover:scale-105 border-4 border-transparent hover:border-[#9b1600] duration-500"></a>
     </div>
   </div>
   <!-- SECTION 4 -->
